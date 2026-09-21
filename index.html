@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Formulario - Clase 1</title>
+</head>
+<body>
+  <form id="form">
+
+    <div class="contenedor-botones">
+      <button type="button" id="form-btn-normal">Estilo normal</button>
+      <button type="button" id="form-btn-contraste">Estilo de alto contraste</button>
+    </div>
+
+    <h1>Formulario de datos personales</h1>
+
+    <div class="campo-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="form-nombre" required minlength="2">
+      <span class="mensaje-error" id="error-nombre"></span>
+    </div>
+
+    <div class="campo-form">
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="form-apellido" required minlength="2">
+      <span class="mensaje-error" id="error-apellido"></span>
+    </div>
+
+    <div class="campo-form">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="form-email" required>
+    </div>
+
+    <div class="campo-form">
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" name="fecha" id="form-fecha" required min="1900-01-01" max="2026-08-28">
+    </div>
+
+    <div class="campo-form">
+      <label for="pais">País de residencia:</label>
+      <input type="text" name="pais" id="form-pais" required minlength="2">
+      <span class="mensaje-error" id="error-pais"></span>
+    </div>
+    
+    <button type="submit" id="form-btn-submit">Enviar</button>
+
+  </form>
+  <script src="./index.js"></script>
+</body>
+</html>
