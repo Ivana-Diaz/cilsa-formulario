@@ -18,19 +18,19 @@
 
     <div class="campo-form">
       <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="form-nombre" required minlength="2">
+      <input type="text" name="nombre" id="form-nombre" required minlength="2" pattern=".*\S.*" title="Este campo no puede quedar vacío">
       <span class="mensaje-error" id="error-nombre"></span>
     </div>
 
     <div class="campo-form">
       <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" id="form-apellido" required minlength="2">
+      <input type="text" name="apellido" id="form-apellido" required minlength="2" pattern=".*\S.*" title="Este campo no puede quedar vacío">
       <span class="mensaje-error" id="error-apellido"></span>
     </div>
 
     <div class="campo-form">
       <label for="email">Email:</label>
-      <input type="email" name="email" id="form-email" required>
+      <input type="email" name="email" id="form-email" required pattern=".*\.(com|net|org|edu|gov|com\.[a-z]{2})$" title="El mail necesita un dominio válido">
     </div>
 
     <div class="campo-form">
@@ -40,7 +40,7 @@
 
     <div class="campo-form">
       <label for="pais">País de residencia:</label>
-      <input type="text" name="pais" id="form-pais" required minlength="2">
+      <input type="text" name="pais" id="form-pais" required minlength="2" pattern=".*\S.*" title="Este campo no puede quedar vacío">
       <span class="mensaje-error" id="error-pais"></span>
     </div>
     
